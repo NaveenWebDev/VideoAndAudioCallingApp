@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.videoapp{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #1C1F2E;
+}
+.videoapp div{
+    display: flex;
+    flex-direction: column;
+}
+.videoapp div input{
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    border-radius:10px;
+}
+button{
+    padding: 1rem 0.5rem;
+    transition: all 0.5s;
+    border-radius:10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2d3247;
+    color: white;
+}
+h1{
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* =========================room desing================================== */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.room{
+    background-color: #1C1F2E;
+    display: grid;
+    place-items: center;
+    position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meeting{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
